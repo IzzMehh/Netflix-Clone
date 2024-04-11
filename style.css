@@ -114,6 +114,7 @@ html{
         position: relative;
         z-index: 1;
         text-align: center;
+        top: -30px;
     }
     
     #firstheading{
@@ -226,7 +227,7 @@ html{
     #video{
         width: 203px;
         position: absolute;
-        top: 825px;
+        top: 835px;
         object-fit: contain;
         margin-left: 37px;
     }
@@ -613,11 +614,11 @@ html{
             top: 5px;
         }
     }
-    @media screen and (max-width:474px){
+    @media screen and (max-width:475px){
         #video{
             width: 203px;
             position: absolute;
-            top: 845px;
+            top: 860px;
             object-fit: cover;
             margin-left: 37px;
         }
