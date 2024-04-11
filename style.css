@@ -385,7 +385,7 @@ html{
     
     /* Section 5 */
     #section5{
-        height: 400px;
+        height: 500px;
         background-color: #000;
         padding-bottom: 52px;
         border-bottom: 10px solid rgba(67, 69, 70, 0.636);
@@ -428,7 +428,7 @@ html{
     /* Section 6 */
     
     #section6{
-        height: 900px;
+        height: 1000px;
         background-color: #000;
         border-bottom: 10px solid rgba(67, 69, 70, 0.636);
     }
