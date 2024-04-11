@@ -224,11 +224,11 @@ html{
     }
     
     #video{
-        width: 150px;
+        width: 203px;
         position: absolute;
-        top: 870px;
+        top: 825px;
         object-fit: cover;
-        margin-left: 50px;
+        margin-left: 37px;
     }
     /* Section 3 */
     
@@ -613,8 +613,15 @@ html{
             top: 5px;
         }
     }
-
-
+    @media screen and (max-width:474px){
+        #video{
+            width: 203px;
+            position: absolute;
+            top: 845px;
+            object-fit: cover;
+            margin-left: 37px;
+        }
+    }
 /* 
    
 
