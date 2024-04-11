@@ -145,7 +145,7 @@ html{
     margin-bottom: 10px;
 }
 
-    #email{
+    .email{
         width: 50%;
         height: 54px;
         padding-left: 15px;
@@ -162,7 +162,7 @@ html{
         font-size: medium;
     }
     
-    #start-button{
+    .start-button{
         min-width: 126px;
         /* max-width: 80%; */
         height: 55.99px;
@@ -575,7 +575,7 @@ html{
 
     @media screen and (max-width:553px) {
 
-        #email{
+        .email{
             width: 80%;
             height: 54px;
             padding-left: 15px;
@@ -596,7 +596,7 @@ html{
             display: flex;
             flex-direction: column;
         }
-        #start-button{
+        .start-button{
             width: 40%;
             max-width: 80%;
             background-color: red;
@@ -767,7 +767,7 @@ html{
     margin-bottom: 10px;
 }
 
-    #email{
+    .email{
         width: 50%;
         height: 54px;
         padding-left: 15px;
@@ -784,7 +784,7 @@ html{
         font-size: medium;
     }
     
-    #start-button{
+    .start-button{
         width: 35%;
         max-width: 80%;
         height: 55.99px;
@@ -1351,7 +1351,7 @@ html{
     .mail>p{
         margin-bottom: 10px;
     }
-    #email{
+    .email{
         width: 375.3px;
         height: 54px;
         padding-left: 15px;
@@ -1368,7 +1368,7 @@ html{
         font-size: medium;
     }
     
-    #start-button{
+    .start-button{
         width: 202.8px;
         height: 55.99px;
         background-color: red;
