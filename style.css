@@ -646,8 +646,9 @@ html{
     #section1{
         /* http://www.w3.org/2000/svg */
         background-image:url(https://assets.nflxext.com/ffe/siteui/vlv3/6cefb2f5-90be-4f57-adc4-f6c3c579273d/3943990c-f4e0-4147-82ad-f531e2b547f3/IN-en-20240401-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-        height:95vh;
+        height:600px;
         width: 100%;
+        background-repeat: no-repeat;
     }
     
     
@@ -660,7 +661,7 @@ html{
         margin-bottom: 200px;
     }
     .box{
-        height: 95vh;
+        height: 600px;
         width: 100%;
         background-color: #000;
         opacity:0.7;
@@ -848,8 +849,8 @@ html{
     #video{
         width: 420px;
         position: absolute;
-        top: 860px;
-        object-fit: cover;
+        top: 820px;
+        object-fit: contain;
         margin-left: 70px;
     }
     /* Section 3 */
