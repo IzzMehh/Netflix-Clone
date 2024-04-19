@@ -435,7 +435,6 @@ html{
     }
     
     #faq{
-        height: 900px;
         width: 80%;
         margin: auto;
         display: flex;
@@ -463,6 +462,7 @@ html{
     }
     .btnbox {
         height: 0;
+        overflow: hidden;
         visibility: hidden;
         transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
@@ -470,16 +470,16 @@ html{
         padding: 0 1.5rem;
         background-color: rgb(45, 45, 45);
         font-family: sans-serif;
-        font-size: 12px;
+        font-size: 18px;
         color: rgb(255, 255, 255);
         margin-bottom: 8px;
     }
     
     .trans {
-        overflow: visible;
+        overflow: hidden;
         padding: 1.5rem;
         visibility: visible;
-        height: 75rem;
+        height: auto;
         transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     visibility 0s linear;
@@ -487,6 +487,7 @@ html{
     
     .add-img{
         float: right;
+        rotate: -45deg;
     }
     .btn:hover{
         background-color: rgba(110, 106, 106, 0.635);
@@ -1077,13 +1078,12 @@ html{
     /* Section 6 */
     
     #section6{
-        height: 950px;
+        height: auto;
         background-color: #000;
         border-bottom: 10px solid rgba(67, 69, 70, 0.636);
     }
     
     #faq{
-        height: 900px;
         width: 80%;
         margin: auto;
         display: flex;
@@ -1111,6 +1111,7 @@ html{
     }
     .btnbox {
         height: 0;
+        overflow: hidden;
         visibility: hidden;
         transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
@@ -1124,10 +1125,10 @@ html{
     }
     
     .trans {
-        overflow: visible;
+        overflow: hidden;
         padding: 1.5rem;
         visibility: visible;
-        height: 75rem;
+        height: auto;
         transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     visibility 0s linear;
@@ -1674,12 +1675,13 @@ html{
     /* Section 6 */
     
     #section6{
+        height: auto;
         background-color: #000;
         border-bottom: 10px solid rgba(67, 69, 70, 0.636);
     }
     
     #faq{
-        height: 900px;
+        /* height: 900px; */
         width: 80%;
         margin: auto;
         display: flex;
@@ -1707,6 +1709,7 @@ html{
     }
 .btnbox {
         height: 0;
+        overflow: hidden;
         visibility: hidden;
         transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
@@ -1720,15 +1723,14 @@ html{
     }
     
     .trans {
-        overflow: visible;
+        overflow: hidden;
         padding: 1.5rem;
         visibility: visible;
-        height: 75rem;
+        height: auto;
         transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
                     visibility 0s linear;
     }
-    
     
     
     .add-img{
