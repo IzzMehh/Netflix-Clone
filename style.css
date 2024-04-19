@@ -487,7 +487,6 @@ html{
     
     .add-img{
         float: right;
-        rotate: -45deg;
     }
     .btn:hover{
         background-color: rgba(110, 106, 106, 0.635);
