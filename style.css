@@ -21,7 +21,7 @@ html{
     #section1{
         /* http://www.w3.org/2000/svg */
         background-image:url(https://assets.nflxext.com/ffe/siteui/vlv3/6cefb2f5-90be-4f57-adc4-f6c3c579273d/3943990c-f4e0-4147-82ad-f531e2b547f3/IN-en-20240401-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-        height:95vh;
+        height:630px;
         width: 100%;
     }
     
@@ -35,7 +35,7 @@ html{
         margin-bottom: 200px;
     }
     .box{
-        height: 95vh;
+        height: 630px;
         width: 100%;
         background-color: #000;
         opacity:0.7;
@@ -61,7 +61,7 @@ html{
         color: white;
         font-family: sans-serif;
         font-size: medium;
-        background-color:rgb(229, 9, 20);
+        background-color:rgb(229, 9, 20);   
         padding: 5px 13px 4px 13px;
         
         /* border: 1px solid white; */
@@ -114,6 +114,7 @@ html{
         position: relative;
         z-index: 1;
         text-align: center;
+        top: -60px;
     }
     
     #firstheading{
@@ -144,7 +145,7 @@ html{
     margin-bottom: 10px;
 }
 
-    #email{
+    .email{
         width: 50%;
         height: 54px;
         padding-left: 15px;
@@ -161,9 +162,9 @@ html{
         font-size: medium;
     }
     
-    #start-button{
-        width: 35%;
-        max-width: 80%;
+    .start-button{
+        min-width: 126px;
+        /* max-width: 80%; */
         height: 55.99px;
         background-color: red;
         color: white;
@@ -224,11 +225,11 @@ html{
     }
     
     #video{
-        width: 150px;
+        width: 203px;
         position: absolute;
-        top: 870px;
-        object-fit: cover;
-        margin-left: 50px;
+        top: 835px;
+        object-fit: contain;
+        margin-left: 37px;
     }
     /* Section 3 */
     
@@ -385,7 +386,7 @@ html{
     
     /* Section 5 */
     #section5{
-        height: 400px;
+        height: 500px;
         background-color: #000;
         padding-bottom: 52px;
         border-bottom: 10px solid rgba(67, 69, 70, 0.636);
@@ -428,13 +429,12 @@ html{
     /* Section 6 */
     
     #section6{
-        height: 900px;
+        height: auto;
         background-color: #000;
         border-bottom: 10px solid rgba(67, 69, 70, 0.636);
     }
     
     #faq{
-        height: 900px;
         width: 80%;
         margin: auto;
         display: flex;
@@ -451,7 +451,7 @@ html{
     }
     .btn{
         padding: 20px;
-        margin-bottom: 8px;
+        margin-bottom: 1px;
         background-color: rgba(59, 57, 57, 0.682);
         border: none;
         color: white;
@@ -460,9 +460,34 @@ html{
         font-size: 18px;
         cursor: pointer;
     }
+    .btnbox {
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    visibility 0s linear 0.25s;
+        padding: 0 1.5rem;
+        background-color: rgb(45, 45, 45);
+        font-family: sans-serif;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 8px;
+    }
+    
+    .trans {
+        overflow: hidden;
+        padding: 1.5rem;
+        visibility: visible;
+        height: auto;
+        transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    visibility 0s linear;
+    }
     
     .add-img{
         float: right;
+        rotate: -45deg;
     }
     .btn:hover{
         background-color: rgba(110, 106, 106, 0.635);
@@ -474,7 +499,7 @@ html{
     #last-login>p{
         color: white;
         font-family: sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
         margin-top: 50px;
         margin-bottom: 15px;
@@ -574,7 +599,7 @@ html{
 
     @media screen and (max-width:553px) {
 
-        #email{
+        .email{
             width: 80%;
             height: 54px;
             padding-left: 15px;
@@ -595,7 +620,7 @@ html{
             display: flex;
             flex-direction: column;
         }
-        #start-button{
+        .start-button{
             width: 40%;
             max-width: 80%;
             background-color: red;
@@ -612,9 +637,25 @@ html{
             position: relative;
             top: 5px;
         }
+        #image2{
+            margin:auto;
+            width: 300px;
+            text-align: center;
+        }
+        #screen{
+            width: 300px;
+            height: auto;    
+        }
     }
-
-
+    @media screen and (max-width:475px){
+        #video{
+            width: 203px;
+            position: absolute;
+            top: 858px;
+            object-fit: cover;
+            margin-left: 37px;
+        }
+    }
 /* 
    
 
@@ -629,8 +670,9 @@ html{
     #section1{
         /* http://www.w3.org/2000/svg */
         background-image:url(https://assets.nflxext.com/ffe/siteui/vlv3/6cefb2f5-90be-4f57-adc4-f6c3c579273d/3943990c-f4e0-4147-82ad-f531e2b547f3/IN-en-20240401-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-        height:95vh;
+        height:600px;
         width: 100%;
+        background-repeat: no-repeat;
     }
     
     
@@ -643,7 +685,7 @@ html{
         margin-bottom: 200px;
     }
     .box{
-        height: 95vh;
+        height: 600px;
         width: 100%;
         background-color: #000;
         opacity:0.7;
@@ -749,7 +791,7 @@ html{
     margin-bottom: 10px;
 }
 
-    #email{
+    .email{
         width: 50%;
         height: 54px;
         padding-left: 15px;
@@ -766,7 +808,7 @@ html{
         font-size: medium;
     }
     
-    #start-button{
+    .start-button{
         width: 35%;
         max-width: 80%;
         height: 55.99px;
@@ -831,8 +873,8 @@ html{
     #video{
         width: 420px;
         position: absolute;
-        top: 860px;
-        object-fit: cover;
+        top: 820px;
+        object-fit: contain;
         margin-left: 70px;
     }
     /* Section 3 */
@@ -1036,13 +1078,12 @@ html{
     /* Section 6 */
     
     #section6{
-        height: 950px;
+        height: auto;
         background-color: #000;
         border-bottom: 10px solid rgba(67, 69, 70, 0.636);
     }
     
     #faq{
-        height: 900px;
         width: 80%;
         margin: auto;
         display: flex;
@@ -1059,7 +1100,7 @@ html{
     }
     .btn{
         padding: 20px;
-        margin-bottom: 8px;
+        margin-bottom: 1px;
         background-color: rgba(59, 57, 57, 0.682);
         border: none;
         color: white;
@@ -1068,7 +1109,30 @@ html{
         font-size: 18px;
         cursor: pointer;
     }
+    .btnbox {
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    visibility 0s linear 0.25s;
+        padding: 0 1.5rem;
+        background-color: rgb(45, 45, 45);
+        font-family: sans-serif;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 8px;
+    }
     
+    .trans {
+        overflow: hidden;
+        padding: 1.5rem;
+        visibility: visible;
+        height: auto;
+        transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    visibility 0s linear;
+    }
     .add-img{
         float: right;
     }
@@ -1333,7 +1397,7 @@ html{
     .mail>p{
         margin-bottom: 10px;
     }
-    #email{
+    .email{
         width: 375.3px;
         height: 54px;
         padding-left: 15px;
@@ -1350,7 +1414,7 @@ html{
         font-size: medium;
     }
     
-    #start-button{
+    .start-button{
         width: 202.8px;
         height: 55.99px;
         background-color: red;
@@ -1611,13 +1675,13 @@ html{
     /* Section 6 */
     
     #section6{
-        height: 950px;
+        height: auto;
         background-color: #000;
         border-bottom: 10px solid rgba(67, 69, 70, 0.636);
     }
     
     #faq{
-        height: 900px;
+        /* height: 900px; */
         width: 80%;
         margin: auto;
         display: flex;
@@ -1634,7 +1698,7 @@ html{
     }
     .btn{
         padding: 24px;
-        margin-bottom: 8px;
+        margin-bottom: 1px;
         background-color: rgba(59, 57, 57, 0.682);
         border: none;
         color: white;
@@ -1643,6 +1707,31 @@ html{
         font-size: 24px;
         cursor: pointer;
     }
+.btnbox {
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    visibility 0s linear 0.25s;
+        padding: 0 1.5rem;
+        background-color: rgb(45, 45, 45);
+        font-family: sans-serif;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 8px;
+    }
+    
+    .trans {
+        overflow: hidden;
+        padding: 1.5rem;
+        visibility: visible;
+        height: auto;
+        transition: height 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    padding 0.25s cubic-bezier(0.5, 0, 0.1, 1),
+                    visibility 0s linear;
+    }
+    
     
     .add-img{
         float: right;
@@ -1730,7 +1819,7 @@ html{
         width: 16px;
         height: 16px;
         position:relative;
-        top: 5px;   
+        top: 5px;
         left: 25px;
     }
     .footer-langoption{
